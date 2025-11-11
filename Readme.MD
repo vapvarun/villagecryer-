@@ -83,7 +83,7 @@ VillageCryer provides a verified, neighborhood-based social network where:
 ### Core Platform
 - **CMS**: WordPress
 - **Community Framework**: BuddyPress
-- **Theme**: Rain Theme (BuddyPress-compatible with integrated event/GeoDirectory support)
+- **Theme**: Reign Theme (BuddyPress-compatible with integrated event/GeoDirectory support)
 - **Hosting**: VPS (Cloudways or RapidCloud recommended, minimum 2-4GB RAM)
 
 ### Key Plugins
@@ -137,7 +137,7 @@ Based on project requirements and meeting discussions:
 ### Plugin Licenses
 Client responsibility to purchase:
 - GeoDirectory Pro + required add-ons
-- Rain Theme license
+- Reign Theme license
 - ACF Pro license
 - WooCommerce extension licenses (gift cards, memberships)
 - Event calendar plugin license (TBD)
@@ -176,39 +176,34 @@ The initial development proposal covered:
 
 Based on the story map document and meeting discussions, these features are genuinely new additions:
 
-#### Truly New Features Added to MVP:
+#### New Features Added to MVP:
 
-**Epic 3 - Event Calendar (+6-8 hours):**
-- Event calendar integration with BuddyPress (6-8 hours)
-  - Event plugin selection and installation
-  - BuddyPress integration setup
-  - Basic event creation interface
-  - RSVP/registration system
-  - Calendar view implementation
-- **Note:** Basic event functionality; advanced features (recurring, paid, booking) would add 6-12 more hours if needed
+**1. Event Calendar (+6-8 hours)**
+- Event creation and management system
+- RSVP/registration functionality
+- Calendar view for neighborhood events
+- *Optional additions: Recurring events, paid ticketing (additional 6-12 hours if needed)*
 
-**Epic 6 - Advertising Features (+2-3 hours):**
-- GeoDirectory advertising add-ons configuration (2-3 hours)
-  - Ad campaign dashboard setup
-  - Neighborhood targeting configuration
-  - Basic analytics integration
-- **Note:** Core GeoDirectory was already in scope; this is just additional add-ons
+**2. WooCommerce & Gift Card System (+15-18 hours)**
+- E-commerce platform integration
+- Digital gift card marketplace
+- Nigerian payment gateways (Paystack + Flutterwave)
+- User-to-user gift sending
+- Community support fund functionality
 
-**Epic 7 - WooCommerce & Gift Cards (+15-18 hours):**
-- WooCommerce installation and configuration (3 hours)
-- WooCommerce Memberships setup (replacing PM Pro decision) (3 hours)
-- Gift card plugin integration (YITH or PW Gift Cards) (4 hours)
-- Paystack payment gateway integration (3 hours)
-- Flutterwave payment gateway integration (2-3 hours)
+**3. Enhanced Advertising Features (+2-3 hours)**
+- Business ad campaign creation
+- Neighborhood-specific targeting
+- Basic analytics dashboard
 
-**Enhanced Wireframe Implementation (+4-5 hours):**
-- Landing page customization per client wireframes (2 hours)
-- Multi-step registration UI refinement (2-3 hours)
-- **Note:** Basic registration flow was already planned; this is client-specific UI polish
+**4. Custom Landing Page & UI Polish (+4-5 hours)**
+- Landing page per client wireframes
+- Registration flow refinements
+- Mobile-optimized user interface
 
-**Comprehensive Documentation (+3 hours):**
-- Detailed user flow documentation (2 hours)
-- Expanded admin training materials (1 hour)
+**5. Enhanced Documentation (+3 hours)**
+- Detailed user flow documentation
+- Expanded admin training materials
 
 ### Revised Total Estimate
 
@@ -238,32 +233,29 @@ Based on the story map document and meeting discussions, these features are genu
 - ✓ Basic classifieds (GeoDirectory core feature)
 - ✓ Business listings (GeoDirectory core feature)
 
-### Items Requiring Client Clarification (May Add Hours)
+### Optional Features (Additional Hours if Needed)
 
-These items need specification before final hours can be confirmed:
+The following features can be added to the MVP based on your preferences:
 
-1. **Event Calendar Requirements (Task #13)**
-   - Basic events only? (already included in 6-8 hours)
-   - Recurring events support? (adds 3-4 hours)
-   - Paid events with ticketing? (adds 4-5 hours)
-   - Advanced booking/seat limits? (adds 3-4 hours)
-   - **Potential additional hours:** 0-13 hours depending on selections
+**1. Advanced Event Features**
+- Recurring events (weekly, monthly) - adds 3-4 hours
+- Paid events with ticketing system - adds 4-5 hours
+- Advanced booking with seat limits - adds 3-4 hours
+- **Total if all selected:** +10-13 hours
 
-2. **GeoDirectory Add-ons (Task #16)**
-   - Basic directory already included in original scope
-   - Select additional add-ons from 28+ options if needed:
-     - Reviews & Ratings (2-3 hours)
-     - Claims/Verification (2-3 hours)
-     - Featured Listings (1-2 hours)
-     - Advanced Search (2-3 hours)
-   - **Potential additional hours:** 0-10 hours for advanced add-ons
+**2. Enhanced GeoDirectory Features**
+Basic directory functionality is included. Optional add-ons:
+- Reviews & Ratings system - adds 2-3 hours
+- Business Claims/Verification - adds 2-3 hours
+- Featured Listings - adds 1-2 hours
+- Advanced Search filters - adds 2-3 hours
+- **Total if all selected:** +7-11 hours
 
-3. **Custom Wireframe Adjustments**
-   - Basic wireframe implementation included (4-5 hours)
-   - Significant custom UI beyond Rain theme would add hours
-   - **Potential additional hours:** 0-8 hours for major customizations
+**3. Custom UI Beyond Standard Theme**
+- Basic Reign theme customization included
+- Extensive custom design work - adds 5-8 hours if needed
 
-**Important Note:** The revised estimate of **105-112 hours** represents the realistic scope based on genuinely new features. Final hours may increase by 0-30 hours depending on client selections for advanced event features and GeoDirectory add-ons.
+**Note:** The base estimate of **105-112 hours** covers all essential MVP features. Optional enhancements would add 0-30 additional hours based on your selections.
 
 ---
 
@@ -310,115 +302,6 @@ These items need specification before final hours can be confirmed:
 - Launch preparation
 
 **Post-MVP**: Phase 2 features (QR codes, advanced events, enhanced directory features)
-
----
-
-## Development Phases (Technical Implementation)
-
-### Phase 1: Foundation & Setup (16 hours)
-
-| Task | Hours | Details |
-|------|-------|---------|
-| **Server & WordPress Setup** | 3 | Server configuration, WordPress installation, Performance optimization |
-| **Plugin Installation & Configuration** | 6 | BuddyPress setup, GeoDirectory configuration, ACF Pro setup, WP SMS installation, Reign theme configuration |
-| **Initial Theme Customization** | 3 | Reign theme branding, Basic layout adjustments, Mobile responsiveness check |
-
-**Note**: Social login removed from MVP scope
-
-### Phase 2: Custom Development - User Verification (23 hours)
-
-| Task | Hours | Details |
-|------|-------|---------|
-| **Custom Registration Form** | 5 | Multi-step form development, ACF field integration, Address collection UI |
-| **Phone Verification System** | 9 | OTP generation logic, Twilio API integration, SMS sending functionality, Code validation system, Error handling |
-| **Manual Verification Workflow** | 5 | Admin notification system, Document upload feature, Approval interface, Status tracking system |
-| **User Profile Enhancements** | 4 | Street name extraction algorithm, Privacy display settings, Verification badge display, Custom profile fields |
-
-### Phase 3: Custom Development - Location Management (21 hours)
-
-| Task | Hours | Details |
-|------|-------|---------|
-| **Region-to-Group Mapping System** | 9 | Automatic group creation, Synchronization logic, Permission inheritance, Member auto-assignment |
-| **KML Import & Boundary Setup** | 4 | Import interface setup, 5 pilot neighborhood boundaries, Validation system |
-| **Address-to-Region Assignment** | 6 | Geocoding integration, Coordinate matching algorithm, Boundary detection logic, Edge case handling |
-| **Location Display Integration** | 2 | Map visualization, User location indicators, Privacy controls |
-
-### Phase 4: Custom Development - Community Features (10 hours)
-
-| Task | Hours | Details |
-|------|-------|---------|
-| **Access Control System** | 4 | Verified-only content restrictions, Neighborhood-based filtering, Guest access limitations |
-| **Group Configuration** | 3 | Auto-join functionality, Privacy settings, Admin tool customization |
-| **Activity Stream Customization** | 3 | Neighborhood-specific feeds, Content filtering rules, Visibility controls |
-
-### Phase 5: Testing & Launch (5 hours)
-
-| Task | Hours | Details |
-|------|-------|---------|
-| **Integration Testing** | 2 | Full workflow testing, Cross-browser checks |
-| **Performance Optimization** | 1 | Caching setup, Database optimization |
-| **Admin Training & Documentation** | 2 | Video walkthrough, Admin guide creation, Launch preparation |
-
----
-
-## Custom Development Summary
-
-### Core Custom Features (Total: 49 hours)
-
-1. **Phone Verification System (9 hours)**
-   - Custom OTP generation and validation
-   - Twilio API integration
-   - Verification status management
-   - SMS retry logic
-   - Nigerian phone number validation
-
-2. **Region-to-Group Mapping (9 hours)**
-   - Automatic BuddyPress group creation from GeoDirectory regions
-   - Bidirectional synchronization
-   - Permission inheritance system
-   - Bulk operations support
-   - Group metadata management
-
-3. **Address-to-Region Assignment (6 hours)**
-   - Smart geocoding algorithm
-   - Polygon boundary detection
-   - Fallback mechanisms for edge cases
-   - Manual override options
-
-4. **Manual Verification Workflow (5 hours)**
-   - Custom admin interface
-   - Document management system
-   - Approval queue management
-   - Email notifications
-
-5. **Custom Registration System (5 hours)**
-   - Multi-step form with validation
-   - Progressive data collection
-   - Error recovery
-   - Status tracking
-
-6. **User Profile Enhancements (4 hours)**
-   - Street name parser
-   - Privacy level controls
-   - Verification status display
-   - Custom field handlers
-
-7. **Access Control System (4 hours)**
-   - Content restriction engine
-   - Neighborhood-based permissions
-   - Role-based access control
-   - Guest limitation logic
-
-8. **Activity Stream Filters (3 hours)**
-   - Location-based filtering
-   - Privacy-aware queries
-   - Performance optimization
-
-9. **Other Custom Work (4 hours)**
-   - Admin dashboard widgets
-   - Custom notifications
-   - API endpoints
-   - Helper utilities
 
 ---
 
@@ -1006,24 +889,9 @@ User receives welcome notification
 
 ---
 
-## Wireframe Locations
-
-**Note**: Client has provided wireframes for key flows. Reference wireframes for:
-- Landing page (desktop & mobile)
-- Sign-up flow (multi-step)
-- Verification method selection
-- Main activity feed (logged-in state)
-- Event creation modal
-- Classifieds posting form
-- Gift card purchase flow
-
-These wireframes should be stored in the project repository under `/docs/wireframes/` for developer reference.
-
----
-
 ## User Experience Design Principles
 
-The platform follows BuddyPress/Rain theme UX patterns:
+The platform follows BuddyPress/Reign theme UX patterns:
 - Mobile-first design (most Nigerian users access via mobile)
 - Activity feed similar to familiar social networks
 - Dark mode and light mode support
@@ -1031,119 +899,124 @@ The platform follows BuddyPress/Rain theme UX patterns:
 - Intuitive member profiles with verification badges
 - Seamless neighborhood-based content filtering
 
-For UI reference, see Rain Theme demo: https://wbcomdesigns.com/downloads/reign-buddypress-theme/
+For UI reference, see Reign Theme demo: https://wbcomdesigns.com/downloads/reign-buddypress-theme/
 
 ---
 
-## Pending Client Decisions
+## What We Need From You
 
-The following items require client input before development can proceed at full speed:
+To begin development and ensure smooth progress, please provide the following:
 
-### High Priority Decisions Needed:
+### Required Before Development Starts:
 
-**1. Event Calendar Specifications (Task #13)**
-- Which event features are required for MVP?
-  - [ ] Basic events (date, time, location, RSVP)
-  - [ ] Recurring events (weekly, monthly)
-  - [ ] Paid events with ticketing
-  - [ ] Booking/seat limit functionality
-  - [ ] External calendar sync (Google Calendar, etc.)
-- Preferred plugin based on requirements
-- **Impact on timeline:** 3-12 additional hours depending on selections
-
-**2. GeoDirectory Add-on Selection (Task #16)**
-- Client must review 28+ available GeoDirectory add-ons
-- Select which add-ons are needed for MVP:
-  - [ ] Claims (business verification)
-  - [ ] Reviews & Ratings
-  - [ ] Featured Listings
-  - [ ] Advanced Search
-  - [ ] Payment integration
-  - [ ] Custom fields
-  - [ ] Others (to be specified)
-- **Impact on timeline:** 3-15 additional hours depending on selections
-
-**3. Payment Gateway Testing Credentials**
-- Paystack sandbox/test account details
-- Flutterwave sandbox/test account details
-- **Required for:** Testing payment flows before launch
-
-**4. Hosting Setup**
-- VPS hosting provider selection (Cloudways/RapidCloud recommended)
+**1. Hosting Setup**
+- VPS hosting account (we recommend Cloudways or RapidCloud)
+- Minimum 2-4GB RAM
 - Server access credentials
-- **Required to begin:** Foundation & Setup phase (Week 1)
+- **Needed by:** Week 1
 
-**5. Plugin License Procurement**
+**2. Plugin Licenses**
+Please purchase the following licenses:
 - GeoDirectory Pro + selected add-ons
-- Rain Theme license
+- Reign Theme license
 - ACF Pro license
 - WooCommerce extensions (Gift Cards, Memberships)
-- Event calendar plugin (TBD after requirements)
-- **Required for:** Plugin configuration phase
+- Event calendar plugin (to be determined)
 
-### Medium Priority Decisions:
+**3. Payment Gateway Credentials**
+- Paystack test account details
+- Flutterwave test account details
+- **Needed for:** Payment testing
 
-**6. Wireframe Finalization**
-- Review and approve current wireframes
-- Identify any custom UI requirements beyond Rain theme
-- **Impact on timeline:** 5-10 hours for significant customizations
+**4. KML Neighborhood Boundaries**
+- Provide KML files for 5 pilot neighborhoods
+- Verify boundary accuracy
+- **Needed for:** Address verification setup
 
-**7. Content & Branding**
+### Decisions to Finalize:
+
+**5. Event Features**
+Which event capabilities do you need?
+- [ ] Basic events (date, time, location, RSVP) - **included**
+- [ ] Recurring events (weekly, monthly) - adds 3-4 hours
+- [ ] Paid events with ticketing - adds 4-5 hours
+- [ ] Booking with seat limits - adds 3-4 hours
+
+**6. Directory Features**
+Basic directory functionality is included. Select additional features if needed:
+- [ ] Reviews & Ratings - adds 2-3 hours
+- [ ] Business Claims/Verification - adds 2-3 hours
+- [ ] Featured Listings - adds 1-2 hours
+- [ ] Advanced Search - adds 2-3 hours
+
+**7. Branding & Content**
 - Site logo and branding assets
 - Landing page copy
 - Welcome email templates
-- **Can be added during development**
+- *Can be provided during development*
 
-**8. KML Boundaries**
-- Provide KML files for 5 pilot neighborhoods
-- Verify boundary accuracy
-- **Required for:** Address verification testing
-
----
-
-## Why This Distribution Works
-
-### Revised Approach (105-112 Hours):
-
-1. **Realistic Scope Assessment:** 75 hours for core features + 30-37 hours for genuinely new requirements
-2. **Most Features Already Covered:** BuddyPress, GeoDirectory, verification system were in original scope
-3. **Focus on True Additions:** Events calendar, WooCommerce/gift cards, Nigerian payment gateways are the real additions
-4. **E-Commerce Foundation:** WooCommerce provides scalability for future monetization
-5. **Nigerian Market Focus:** Paystack/Flutterwave payment gateways tailored for Nigeria
-6. **Efficient Delivery:** 6-7 week timeline leverages existing plugin capabilities
-7. **Scalable Architecture:** GeoDirectory and WooCommerce provide extensibility for Phase 2 features
-
-### Hour Distribution Breakdown:
-
-| Phase | Original | Added | Total | Percentage |
-|-------|----------|-------|-------|------------|
-| **Setup & Foundation** | 16 | 0 | 16 | 15% |
-| **User Verification** | 23 | 0 | 23 | 21% |
-| **Location Management** | 21 | 0 | 21 | 19% |
-| **Community Features** | 10 | 2-3 | 12-13 | 11% |
-| **Events Calendar (NEW)** | 0 | 6-8 | 6-8 | 6% |
-| **WooCommerce & Gift Cards (NEW)** | 0 | 15-18 | 15-18 | 15% |
-| **Wireframe Polish (NEW)** | 0 | 4-5 | 4-5 | 4% |
-| **Testing & Documentation** | 5 | 3 | 8 | 7% |
-| **TOTAL** | **75** | **30-37** | **105-112** | **100%** |
-
-### What This Means:
-
-- **40% increase** in hours (not doubling), reflecting truly new features only
-- Most story map features were already anticipated in original proposal
-- BuddyPress and GeoDirectory handle majority of Epic 1-6 features natively
-- Only Epic 7 (gift cards/e-commerce) is significantly new work
-- Event calendar is a straightforward plugin integration
-
-### Risk Mitigation:
-
-- Complex features (verification, mapping) already allocated adequate time in original scope
-- New features are plugin-based (WooCommerce, events) reducing custom development risk
-- Client clarification checkpoints for advanced features (recurring events, advanced GeoDirectory add-ons)
-- Phased approach allows for course correction
-- Regular Basecamp updates and weekly sync meetings
-- Buffer for additional requirements: 0-30 hours depending on client selections
+**8. Wireframe Approvals**
+- Review and approve current wireframes
+- Confirm any custom UI requirements
+- *Minor adjustments included; major changes would add 5-8 hours*
 
 ---
 
-*This document combines product vision with technical implementation strategy. The revised 105-112 hour estimate (up from 75 hours baseline by 40%) accurately reflects genuinely new features from the story map. Most features were already covered by the original BuddyPress + GeoDirectory scope. Final hours may increase by 0-30 hours pending client clarifications on event features and GeoDirectory add-ons.*
+## Project Summary
+
+### Total Investment: 105-112 Hours
+
+**What's Included:**
+- Core community platform with BuddyPress
+- Phone & address verification system
+- Neighborhood-based groups and content
+- GeoDirectory for classifieds and business listings
+- Event calendar system
+- WooCommerce gift card marketplace
+- Nigerian payment gateways (Paystack + Flutterwave)
+- Custom landing page and UI
+- Admin training and documentation
+
+### Timeline: 6-7 Weeks
+
+| Week | Focus | Hours |
+|------|-------|-------|
+| 1-2 | Foundation & user verification | 20 |
+| 3-4 | Location management & neighborhoods | 20 |
+| 5 | Community features & access control | 15 |
+| 6 | Events, gift cards, payment gateways | 25 |
+| 7 | Testing, optimization, training | 20-22 |
+
+### Why This Approach Works:
+
+1. **Proven Technology:** Built on WordPress, BuddyPress, and established plugins
+2. **Nigerian Focus:** Paystack/Flutterwave payments, mobile-first design, SMS verification
+3. **Scalable Platform:** Easy to add features in Phase 2 (QR codes, advanced events, etc.)
+4. **Real-Time Visibility:** Development on live server with Basecamp tracking
+5. **Quality Assurance:** Built-in testing, optimization, and training
+
+### Optional Additions (if needed):
+
+- Advanced event features: +10-13 hours
+- Enhanced directory features: +7-11 hours
+- Custom UI beyond theme: +5-8 hours
+
+**Final range: 105-142 hours** depending on your feature selections.
+
+---
+
+## Next Steps
+
+1. **Review this document** and let us know if you have questions
+2. **Make decisions** on event features and directory add-ons (section above)
+3. **Set up hosting** (Cloudways or RapidCloud recommended)
+4. **Purchase plugin licenses** (list provided in "What We Need From You" section)
+5. **Provide payment gateway credentials** for testing
+6. **Send KML files** for pilot neighborhoods
+7. **Initial payment** to begin development (details in our payment link)
+
+Once we receive items 1-6, we'll create your Basecamp project and begin Week 1!
+
+---
+
+*VillageCryer MVP will transform how Nigerian neighborhoods communicate, verify residents, support local businesses, and build stronger communities. This document outlines the complete development plan from concept to launch.*
